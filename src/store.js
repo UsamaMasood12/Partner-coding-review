@@ -1,12 +1,20 @@
-const TOGGLE = 'action/toggle';
-const LOAD_TODOS = 'action/load_todos';
-const SWAP_TODOS = 'action/swap';
-const ADD_TODO = 'action/add_todo';
-const EDIT_TODO = 'action/edit_description';
-const DELETE_TODO = 'action/delete_todo';
-const CLEAR_COMPLETED = 'action/clear_completed';
+ const TOGGLE = 'action/toggle';
+ const LOAD_TODOS = 'action/load_todos';
+ const SWAP_TODOS = 'action/swap';
+ const ADD_TODO = 'action/add_todo';
+ const EDIT_TODO = 'action/edit_description';
+ const DELETE_TODO = 'action/delete_todo';
+ const CLEAR_COMPLETED = 'action/clear_completed';
 
-module.exports = { TOGGLE, LOAD_TODOS, SWAP_TODOS, ADD_TODO, EDIT_TODO, DELETE_TODO, CLEAR_COMPLETED};
+export {
+  TOGGLE,
+  LOAD_TODOS, 
+  SWAP_TODOS, 
+  ADD_TODO, 
+  EDIT_TODO, 
+  DELETE_TODO, 
+  CLEAR_COMPLETED
+};
 
 export default function createStore() {
   let state = [];
